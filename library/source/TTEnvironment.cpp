@@ -236,6 +236,15 @@ TTErr TTObjectInstantiate(const TTSymbolPtr className, TTObjectPtr* returnedObje
 }
 
 
+TTErr TTObjectInstantiate(const TTSymbolPtr className, TTObjectPtr* returnedObjectPtr, TTImmutableCString parseString)
+{
+	TTValue	v;
+	
+	v.parseFromString();
+	return ttEnvironment->createInstance(className, returnedObjectPtr, v);
+}
+
+
 TTObjectPtr TTObjectReference(TTObjectPtr anObject)
 {
 	return ttEnvironment->referenceInstance(anObject);

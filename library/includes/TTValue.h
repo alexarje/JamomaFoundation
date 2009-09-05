@@ -636,6 +636,10 @@ public:
 		append(*str);	// CHANGED: If we pass a pointer then this is appended at a generic TTPtr [TAP]
 	}
 	
+	
+	/**	Parse a C-String into an array of values in their native types and assign to the TTValue instance.	*/
+	TTErr parseFromString(TTImmutableCString parseString);
+	
 };
 
 

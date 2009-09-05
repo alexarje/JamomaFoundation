@@ -964,3 +964,16 @@ TTErr TTValue::transformCSVStringToSymbolArray()
 	return kTTErrNone;
 }
 
+
+TTErr TTValue::parseFromString(TTImmutableCString parseString)
+{
+#error needs implementation
+
+	TTString	str(parseString);	// TODO: make sure this does a copy so we don't corrupt parseString
+	
+	clear();
+	
+	// TODO: parse the string, calling append() as we go...
+	
+}
+
