@@ -52,6 +52,8 @@
 		className (TTValue& arguments);											\
 		/** Destructor */														\
 		virtual ~className ();													\
+		/**	Unit Testing */														\
+		virtual TTErr test(const TTValue& v);									\
 
 // ON WINDOWS THERE CAN BE NO SPACE BETWEEN ~ and CLASSNAME like
 //		virtual ~ className ();	

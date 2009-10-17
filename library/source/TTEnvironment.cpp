@@ -284,3 +284,18 @@ TTErr TTGetRegisteredClassNamesForTags(TTValue& classNames, const TTValue& searc
 }
 
 
+#pragma mark -
+#pragma mark unit tesing
+
+TTErr test(const TTValue& v)
+{
+	// TODO: v contains a list of tests to run on this class
+	// TODO: if v is empty, then we run all tests
+	
+
+	
+
+	#error what do we really to return to the test caller?  how do report errors?
+}
+
+

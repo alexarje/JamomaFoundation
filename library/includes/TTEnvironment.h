@@ -134,7 +134,9 @@ public:
 
 		@param	unit		A pointer to the unit to free.
 		@return				An error code.	*/
-	TTErr releaseInstance(TTObjectPtr* anObject);	
+	TTErr releaseInstance(TTObjectPtr* anObject);
+	
+	TTErr test(const TTValue& v);
 };
 
 

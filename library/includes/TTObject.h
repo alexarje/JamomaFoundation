@@ -243,6 +243,9 @@ public:
 		return locked > 0;
 	}
 	
+	/** Unit Testing -- all subclasses are required to implement a test method. */
+	virtual TTErr test(const TTValue& v) = 0;
+	
 };
 
 
